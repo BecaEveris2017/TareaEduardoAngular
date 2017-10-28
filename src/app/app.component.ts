@@ -9,11 +9,14 @@ export class AppComponent {
   nombre:string;
   colores:string[];
   placeholder:string;
+  showList:boolean;
 
   constructor() {
     this.nombre = 'Eduardo Almaraz Pintor';
     this.colores = ['Amarillo', 'Verde', 'Azul'];
     this.placeholder = 'Ingresa un color';
+    this.showList = true;
+
   }
 
   addColor(color) {
@@ -22,5 +25,9 @@ export class AppComponent {
     color.value = '';
     this.placeholder = 'Ingresa otro color';
     return false;
+  }
+
+  switchView() {
+    this.showList = !this.showList;
   }
 }

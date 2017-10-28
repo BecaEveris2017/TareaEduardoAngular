@@ -1,15 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="cuerpo">
-  <div class="container">
-    <h2>{{nombre}}</h2>
+  <h1 style="text-align:center">Tarea Everis</h1>
+  <div class="container1">
+    <h2 style="height:2rem">{{nombre}}</h2>
     <div class="lista1">
-      <ul>
+      <ul style="padding:1rem; margin-left:1rem;">
         <li *ngFor='let color of colores'>{{color}}</li>
       </ul>
     </div>
     <form (submit)="addColor(color)">
-      <input style="margin-top:1rem" #color type="text" placeholder={{placeholder}} name="color">
+      <input style="margin-top:0.1rem" #color type="text" placeholder={{placeholder}} name="color">
     </form>
   </div>
+  <div class="container2">
+    <button class="btn" (click)="switchView()">{{showList ? 'Ocultar Lista' : 'Mostrar Lista'}}</button>
+    <div class="lista2" *ngIf="showList">
+      <ul style="padding:1rem; margin-left:1rem;">
+        <li *ngFor='let color of colores'>{{color}}</li>
+      </ul>
+    </div>
 </div>
 

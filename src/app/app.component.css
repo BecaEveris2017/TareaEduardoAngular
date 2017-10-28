@@ -2,17 +2,46 @@
 .cuerpo {
     background-color: #fff;
     color: #0f0931;
+    align-content: center;
 }
 
-.container {
-    width: 35rem;
+.container1 {
+    width: 38rem;
+    float: left;
+    box-shadow: 2px 4px 4px rgba(31, 33, 49, 0.212);
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.container2 {
+    width: 38rem;
+    float: right;
+    box-shadow: 2px 4px 4px rgba(31, 33, 49, 0.212);
+    padding: 1rem;
+    padding-bottom: 3rem;
 }
 
 .lista1 {
     background-color: #120849e1;
     color: #fff;
-    width: 38rem;
-    float: left;
-    box-shadow: 2px 4px 4px rgba(31, 33, 49, 0.87);
+    width: 35rem;
+    box-shadow: 2px 4px 4px rgba(31, 33, 49, 0.4);
     border-radius: 0.3rem;
+}
+
+.lista2 {
+    background-color: #0a4908e1;
+    color: #fff;
+    width: 35rem;
+    box-shadow: 2px 4px 4px rgba(37, 49, 31, 0.4);
+    border-radius: 0.3rem;
+}
+
+.btn {
+    height: 2rem;
+    margin: 0.7rem;
+}
+
+li {
+    list-style: none;
 }
